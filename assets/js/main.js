@@ -381,7 +381,7 @@
   var palette = $("#palette"), pInput = $("#paletteInput"), pList = $("#paletteList"), pItems = [], pSel = 0;
   var SECTIONS = [
     ["#capabilities", "cap.title"], ["#work", "nav.work"], ["#machine", "nav.machine"],
-    ["#experience", "nav.experience"], ["#about", "nav.about"], ["#contact", "nav.contact"]
+    ["#experience", "nav.experience"], ["#certificates", "cert.nav"], ["#about", "nav.about"], ["#contact", "nav.contact"]
   ];
 
   function renderPalette() {
@@ -457,6 +457,18 @@
     } else {
       window.open("https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(body), "_blank", "noopener");
     }
+  });
+
+  /* ---------------- back to top ---------------- */
+  // #top is the sticky nav, which never counts as "out of view", so the
+  // browser won't scroll to it on its own.
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest('a[href="#top"]');
+    if (!a) return;
+    e.preventDefault();
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    window.scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
+    history.replaceState(null, "", location.pathname + location.search);
   });
 
   /* ---------------- boot ---------------- */
