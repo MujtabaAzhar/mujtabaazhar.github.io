@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Speed S3 · Cloud Gateway · Mujtaba Azhar</title>
+<meta name="description" content="An ESP32-S3 that reads the PLC over RS-485 and reports every machine to the cloud">
+<link rel="canonical" href="https://mujtabaazhar.github.io/work/speed-s3-gateway">
+<meta property="og:title" content="Speed S3 · Cloud Gateway · Mujtaba Azhar">
+<meta property="og:description" content="An ESP32-S3 that reads the PLC over RS-485 and reports every machine to the cloud">
+<meta property="og:image" content="https://mujtabaazhar.github.io/assets/og.png">
+<link rel="icon" href="../assets/brand/favicon-64.png" type="image/png" sizes="64x64">
+<meta http-equiv="refresh" content="0; url=../#/work/speed-s3-gateway">
+<script>location.replace("../#/work/speed-s3-gateway" + "");</script>
+<style>body{font:16px/1.6 system-ui,sans-serif;background:#07090d;color:#e9edf4;max-width:680px;margin:60px auto;padding:0 16px}a{color:#3cf0b4}small{color:#8f9aad}</style>
+</head>
+<body>
+<p><a href="../#/work/speed-s3-gateway">← Mujtaba Azhar · portfolio</a></p>
+<h1>Speed S3 · Cloud Gateway</h1>
+<p><strong>An ESP32-S3 that reads the PLC over RS-485 and reports every machine to the cloud</strong></p>
+<h2>The problem</h2><p>Installed machines were black boxes. When one stopped at a customer site, the only way to find out why was to send a technician.</p>
+<h2>What I built</h2><p>Firmware for a Waveshare ESP32-S3 relay board wired to the PLC's COM2 port over RS-485 Modbus. It polls machine state, counters and sensor transitions, derives faults in software, stores every event in flash when offline and uploads when WiFi returns. A Laravel portal (installedmachine.speedtrackauto.com) lists every machine with live status, alarms, counters and an event log, and lets logged-in users send commands. Setup is a hotspot page: join S3-Setup-&lt;serial&gt;, enter WiFi, serial and API key.</p>
+<h2>The outcome</h2><p>The company sees each installed machine remotely, diagnoses faults before driving out, and loses no data when a site's internet drops. Safety stays hard-wired: the E-stop never depends on the gateway.</p>
+<p><small>ESP32-S3 · C++ / Arduino · Modbus RTU · RS-485 · Offline flash buffer · Laravel 12 · MySQL</small></p>
+<div dir="rtl" lang="ar"><h2>سبيد S3 · البوابة السحابية</h2><p>وحدة ESP32-S3 تقرأ الـ PLC عبر RS-485 وترسل بيانات كل ماكينة إلى السحابة</p></div>
+</body>
+</html>
