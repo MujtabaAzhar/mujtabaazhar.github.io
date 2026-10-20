@@ -171,7 +171,6 @@ window.I18N = {
     "form.err": "Please fill in your name and a message.",
     "form.greeting": "Hi Mujtaba, I'm",
 
-    "footer.made": "Designed & built by hand — no templates.",
     "footer.top": "Back to top",
 
     "palette.placeholder": "Jump to a project or section…",
@@ -351,7 +350,6 @@ window.I18N = {
     "form.err": "يرجى كتابة اسمك ورسالتك.",
     "form.greeting": "مرحبًا مجتبى، أنا",
 
-    "footer.made": "صُمّم وبُني يدويًا — دون قوالب.",
     "footer.top": "إلى الأعلى",
 
     "palette.placeholder": "انتقل إلى مشروع أو قسم…",
